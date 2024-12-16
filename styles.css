@@ -1,0 +1,104 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    margin: 2rem;
+}
+
+/* Dustbin Status Section */
+.status {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.status h2 {
+    margin-bottom: 1rem;
+}
+
+.dustbin-level {
+    text-align: center;
+}
+
+.level-bar-container {
+    background-color: #ddd;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#level-bar {
+    background-color: #4CAF50;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Actions Section */
+.actions {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions h2 {
+    margin-bottom: 1rem;
+}
+
+.actions button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#notify-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+#empty-btn {
+    background-color: #FF9800;
+    color: white;
+}
+
+#pay-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+}

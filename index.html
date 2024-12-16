@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Waste Management System">
+    <title>Smart Waste Management</title>
+    <!-- SweetAlert Library for better notifications -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Waste Management System</h1>
+    </header>
+
+    <main>
+        <section class="status">
+            <h2>Dustbin Status</h2>
+            <div class="dustbin-level">
+                <p>Current Level: <span id="dustbin-level">0%</span></p>
+                <div class="level-bar-container">
+                    <div id="level-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <h2>Actions</h2>
+            <button id="notify-btn" onclick="sendNotification()">Notify Me When Full</button>
+            <button id="empty-btn" onclick="orderBinEmptying()">Order Bin Emptying</button>
+            <button id="pay-btn" onclick="makePayment()">Pay via M-Pesa</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Waste Management System</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
